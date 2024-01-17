@@ -1,3 +1,4 @@
+import os
 try:
     # Intenta abrir el archivo en modo de lectura ('r')
     with open("mi_archivo.txt", 'r') as file:
@@ -46,3 +47,5 @@ with open("mi_archivo.txt", 'a') as file:
     # Esta línea causará un error si se intenta ejecutar aquí
     # content = file.read()
     pass  # No se ejecutará debido a la línea anterior
+
+os.getcwd()
