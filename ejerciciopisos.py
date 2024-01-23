@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import gradio as gr
 
-df = pd.read_csv('pisos_precios.csv')
+df = pd.read_csv('pisos_huge.csv')
 # X son las características (superficie_construida y distritos_id) e Y es lo que queremos predecir (precio)
 x = df[['superficie_construida', 'distritos_id']]
 y = df['precio']
