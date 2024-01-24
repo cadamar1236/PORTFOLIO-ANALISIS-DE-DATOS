@@ -74,8 +74,8 @@ evaluacion = modelo.evaluate(X_test, y_test)
 print(f"Test Accuracy: {evaluacion[1] * 100}%")
 modelo.save('modelo_cats_vs_dogs.keras') # Guarda el modelo en un archivo .keras
 modelo = load_model('modelo_cats_vs_dogs.keras')
-predecir_imagen(modelo, 'perro1.jpg')
-predecir_imagen(modelo, 'perro2.jpg')
-predecir_imagen(modelo, 'gato1.jpg')
-predecir_imagen(modelo, 'gato2.jpg')
+predecir_imagen('perro1.jpg')
+predecir_imagen('perro2.jpg')
+predecir_imagen('gato1.jpg')
+predecir_imagen('gato2.jpg')
 
